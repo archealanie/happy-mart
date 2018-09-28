@@ -2,7 +2,10 @@
 @import "partials/partial";
 @import "mixins/mixins";
 
-@include font-face('BebasKai','../font/BebasKai', 100, normal, eot woff2 woff ttf otf)
+@include font-face('BebasKai','../font/bebas-kai/BebasKai', 100, normal, eot woff2 woff ttf otf)
+@include font-face('Arial','../font/arial-rounded/ARLRDBD_0', 100, normal, woff)
+@include font-face('Calibri','../font/calibri/Calibri-Light', 100, normal, eot ttf woff)
+
 
 body {
   font-family: BebasKai;
@@ -10,7 +13,26 @@ body {
 }
 
 .container {
-  width: $container;
   margin: auto;
-  background: $primary;
+  position: relative;
+}
+
+.happy-box {
+  padding: 30px 0px;
+  .box-title { text-align: center }
+}
+
+h2 { font-size: $h2 }
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: $red;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .2s ease;
+  opacity: .4;
 }

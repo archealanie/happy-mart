@@ -1,7 +1,14 @@
 //Primary Font
 $font-stack:    Helvetica, sans-serif;
 
-$container: 1024px;
+//$logo
+$logo: "../images/logo.png";
+
+//Common
+//$container: 1024px;
+$banner-height: 525px;
+$header-top-distance: 35px;
+$header-height: 57px;
 
 //Colors
 $primary: #ffe57f;
@@ -9,3 +16,11 @@ $red: #e96d6d;
 $green: #6de984;
 $font-color: #2e2f2d;
 $white: #fff;
+
+//Typography
+$h1: "";
+$h2: 50px;
+$h3: "";
+$h4: "";
+$h5: "";
+$h6: "";

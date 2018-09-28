@@ -1,0 +1,86 @@
+
+.header{
+  z-index: 1 !important;
+  position: absolute;
+  width: 100%;
+  top: $header-top-distance;
+  height: $header-height;
+  background: rgba(0, 0, 0, 0.80);
+  .container {
+    color: $white;
+    .logo-container {
+      position: relative;
+      .logo {
+        position: absolute;
+        width: 238px;
+        background: url($logo);
+        top: -20px;
+        height: 95px;
+        z-index: 2;
+      }
+    }
+    .nav-container {
+      float: right;
+      .nav {
+        ul {
+          list-style: none;
+          li {
+            display: inline-block;
+            font-size: 18px;
+            text-transform: uppercase;
+            margin: 0px;
+            margin-left: -3px;
+            padding: 15px 10px;
+            cursor: pointer;
+            transition: 0.2s;
+            &:hover {
+              padding-bottom: 17px;
+              background: $white;
+              color:$green;
+            }
+            &.menu {
+              &.active{
+                background: $white;
+                color: $green;
+              }
+              .sub-menu {
+                position: absolute;
+                background: #f6f6f6;
+                border-top: 2px solid $green;
+                left: 15px;
+                top: 57px;
+                width: 100%;
+                height: 0;
+                display: block;
+                text-align: center;
+                overflow: hidden;
+                .container {
+                  padding: 20px 0px;
+                  .portlet {
+                    font-family: Arial;
+                    text-transform: none;
+                    font-size: 14px;
+                    display: inline-flex;
+                    .portlet-column {
+                      position: relative;
+                      background: $white;
+                      color: $font-color;
+                      padding: 23px 10px 10px 10px;
+                      margin: 0px 10px;
+                      width: 110px;
+                      border-radius: 2px;
+                      &:hover {
+                        box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
+                      }
+                    }
+                  }
+                }
+
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

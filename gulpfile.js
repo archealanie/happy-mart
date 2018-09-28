@@ -47,7 +47,7 @@ gulp.task('libraries', function() {
 //Watch file changes then gulp
 gulp.task('watch', function () {
     gulp.watch(publicPath + 'library/coffee/*.coffee', ['scripts']);
-    gulp.watch(publicPath + 'library/sass/*.scss', ['css']);
+    gulp.watch(publicPath + 'library/sass/**/*', ['css']);
     gulp.watch(publicPath + '/pages/*.html', ['front']);
     gulp.watch(publicPath + '/library/**/*', ['libraries']);
 })
