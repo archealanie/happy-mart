@@ -1,0 +1,16 @@
+@import "variables";
+@import "partials/partial";
+@import "mixins/mixins";
+
+@include font-face('BebasKai','../font/BebasKai', 100, normal, eot woff2 woff ttf otf)
+
+body {
+  font-family: BebasKai;
+  color: $font-color;
+}
+
+.container {
+  width: $container;
+  margin: auto;
+  background: $primary;
+}
