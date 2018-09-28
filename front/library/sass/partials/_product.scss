@@ -1,0 +1,42 @@
+.happy-box {
+  &.product {
+    color:$white;
+    a {
+      color:$white;
+    }
+    .nav  {
+      display: block;
+      &.nav-tabs {
+        border: unset;
+        text-align:center;
+        &> li {
+          float:none;
+          display:inline-block;
+        }
+        .nav-link {
+          border-radius: unset;
+          border: unset;
+          padding: unset;
+          display: unset;
+          margin: 10px;
+          font-size: 20px;
+          &.active {
+            background: unset;
+            border-bottom: 3px solid $red;
+            color: $white;
+          }
+          &:hover {
+            border: unset;
+          }
+        }
+      }
+    }
+    .tab-content {
+      display: inline-grid;
+      padding: 25px 0px;
+      &>.tab-pane {
+        display: flex;
+      }
+    }
+  }
+}
