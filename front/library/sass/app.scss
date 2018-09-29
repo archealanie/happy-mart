@@ -1,11 +1,11 @@
 @import "variables";
 @import "partials/partial";
+@import "modules/ribbon";
 @import "mixins/mixins";
 
 @include font-face('BebasKai','../font/bebas-kai/BebasKai', 100, normal, eot woff2 woff ttf otf)
 @include font-face('Arial','../font/arial-rounded/ARLRDBD_0', 100, normal, woff)
 @include font-face('Calibri','../font/calibri/Calibri-Light', 100, normal, eot ttf woff)
-
 
 body {
   font-family: BebasKai;
