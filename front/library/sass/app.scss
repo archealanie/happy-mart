@@ -35,31 +35,53 @@ h2 { font-size: $h2 }
   width: 0;
   height: 100%;
   transition: .2s ease;
-  opacity: .4;
 }
 
 .happy-slot {
+  position: relative;
   background: $white;
   border-radius: 3px;
-  height: 260px;
-  width: 190px;
-  padding: 30px 10px 20px 10px;
+  height: 267px;
+  width: 195px;
+  padding: 13px 10px 20px;
   color: $font-color;
   text-align: center;
   margin: 0px 10px;
+  &:hover {
+    .overlay {
+      width: 100%;
+    }
+  }
   .image {
     margin: auto;
-    height: 135px;
-    width: 130px;
-    background: $font-color;
-    margin-bottom: 10px;
+    height: 166px;
+    width: 145px;
+    //background: $font-color;
+    margin-bottom: 3px;
   }
   .title {
+    z-index: 2;
     font-size: 25px;
     line-height: normal;
   }
   .price {
     font-size: 17px;
     line-height: normal;
+  }
+  .overlay {
+    background: $transparent-red;
+    color: $white;
+    font-size: 20px;
+    .btn {
+      margin-top: 100px;
+      border: 1px solid $white;
+      border-radius: unset;
+      padding: .375rem 1.75rem;
+      opacity: 1;
+      &:hover {
+        background: $white;
+        color: $dark-yellow;
+      }
+    }
   }
 }

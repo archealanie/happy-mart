@@ -37,6 +37,10 @@
       width: 110px;
       text-align: center;
       margin-top: 10px;
+      cursor: pointer;
+      &:hover {
+        background: $green;
+      }
     }
   }
 }
