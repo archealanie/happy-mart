@@ -1,0 +1,21 @@
+
+.happy-box.location {
+  color: $white;
+  background-image: linear-gradient($green, $white);
+  .box-title .small {
+    font-size: 15px;
+    span {
+      padding: 3px 10px;
+      background: $font-color;
+    }
+  }
+  .map {
+    border: 0;
+    margin-top: 25px;
+    text-align: center;
+    span {
+      display: inline-flex;
+      box-shadow: 5px 5px 8px #2323232b;
+    }
+  }
+}
