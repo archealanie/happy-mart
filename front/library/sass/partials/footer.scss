@@ -1,7 +1,46 @@
 .happy-box {
   &.footer {
+    background: $black url($footer-bg) no-repeat center;
     .container {
-      padding: 100px 10px;
+      color: $white;
+      display: table;
+      padding: 30px 10px;
+      .left,
+      .middle,
+      .right {
+        flex: 1;
+        display: table-cell;
+        height: 40px;
+        padding: 10px;
+      }
+      .left {
+        width: 200px;
+        margin-left: auto;
+        .social {
+          margin-top: 10px;
+          font-size: 22px;
+        }
+      }
+      .middle {
+        font-family: Century-Gothic;
+        font-size: 13px;
+        vertical-align: middle;
+        text-align: center;
+        border-right: 1px solid $white;
+        border-left: 1px solid $white;
+      }
+      .right {
+        width: 200px;
+        margin-right: auto;
+        ul {
+          font-size: 14px;
+          padding: 0;
+          list-style-type: none;
+          li {
+            line-height: 1.2;
+          }
+        }
+      }
     }
   }
 }

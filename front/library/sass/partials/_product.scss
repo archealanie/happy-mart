@@ -1,8 +1,9 @@
 .happy-box {
   &.product {
-    color:$white;
+    background: radial-gradient(ellipse at top, transparent 1%, #fff0b3);
+    //color:$white;
     a {
-      color:$white;
+      color:$font-color;
     }
     .nav  {
       display: block;
@@ -23,10 +24,10 @@
           &.active {
             background: unset;
             border-bottom: 3px solid $red;
-            color: $white;
+            color: $font-color;
           }
           &:hover {
-            border: unset;
+            border-bottom: 3px solid $red;
           }
         }
       }

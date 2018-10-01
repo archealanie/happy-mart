@@ -6,17 +6,23 @@
 @include font-face('BebasKai','../font/bebas-kai/BebasKai', 100, normal, eot woff2 woff ttf otf)
 @include font-face('Arial','../font/arial-rounded/ARLRDBD_0', 100, normal, woff)
 @include font-face('Calibri','../font/calibri/Calibri-Light', 100, normal, eot ttf woff)
+@include font-face('Century-Gothic','../font/gothic/gothic', 100, normal, eot ttf woff)
 
 body {
   font-family: BebasKai;
   color: $font-color;
-  background: $dark;
 }
 
 .container {
   margin: auto;
   position: relative;
 }
+
+.text-yellow {color: $primary; }
+.text-red {color: $red; }
+.text-green {color: $green; }
+
+.bg-black { background: $black }
 
 .happy-box {
   padding: 30px 0px;
