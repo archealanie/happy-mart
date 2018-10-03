@@ -1,0 +1,107 @@
+.btn-circle {
+  display: table-cell;
+  border: 1px solid $white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  vertical-align: middle;
+  text-align: center;
+  justify-content: center;
+}
+
+.happy-box {
+  &.footer {
+    background: $black url($footer-bg) no-repeat center;
+    padding: 10px 0 0;
+    .container {
+      color: $white;
+      display: table;
+      padding: 30px 10px 0px;
+      border-bottom: 2px solid;
+      border-image: radial-gradient($white 70%, unquote('#fff0'));
+      border-image-slice: 1;
+      .left,
+      .middle,
+      .right {
+        flex: 1;
+        display: table-cell;
+        height: 40px;
+        padding: 10px;
+      }
+      .left {
+        width: 200px;
+        margin-left: auto;
+        .social {
+          margin-top: 10px;
+          font-size: 22px;
+          i {
+            transition: .1s ease;
+            margin: 0px 3px;
+            &:hover {
+              color: $red;
+            }
+          }
+        }
+      }
+      .middle {
+        font-family: Century-Gothic;
+        font-size: 13px;
+        vertical-align: middle;
+        text-align: center;
+        .description {
+          padding: 15px 0px;
+          display: flex;
+          border-right: 1px solid $white;
+          border-left: 1px solid $white;
+        }
+      }
+      .right {
+        width: 200px;
+        margin-right: auto;
+        ul {
+          font-size: 14px;
+          padding: 0;
+          list-style-type: none;
+          li {
+            transition: .2s ease;
+            line-height: 1.2;
+            &:hover {
+              border-left: 2px solid #ffe57f;
+              padding-left: 5px;
+            }
+          }
+        }
+      }
+      &.contact-info {
+        border: unset !important;
+        text-align: center;
+        font-family: Century-Gothic;
+        .contact-container {
+          text-align: -webkit-center;
+          .contact {
+            display: table-cell;
+            padding: 0 30px;
+            max-width: 242px;
+            .btn-circle { font-size: 25px; }
+            .label {
+              margin-top: 12px;
+              line-height: 1.2em;
+              font-size: 14px;
+              &.address {
+                font-family: BebasKai;
+              }
+            }
+          }
+        }
+      }
+      &.copy-right {
+        margin-top: 30px;
+        padding: 5px 0;
+        border: unset !important;
+        background: $black;
+        color: white;
+        font-size: 14px;
+      }
+    }
+  }
+}

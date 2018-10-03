@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="b6261ab9-ba40-4cdf-a1d6-c6e14efe237e" name="happy-mart" url="http://ftp.buildzapp.com">
+        <fileTransfer host="ftp.buildzapp.com" port="21" rootFolder="/public_html/happymart">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
